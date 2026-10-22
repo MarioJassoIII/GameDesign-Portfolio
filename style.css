@@ -140,3 +140,26 @@ h2 span {
   height: 100%;
   border: 0;
 }
+
+@media (max-width: 991.98px) {
+  footer .navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer .navbar-brand {
+    order: 1;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  footer .navbar-toggler {
+    order: 0;
+  }
+
+  footer .navbar-collapse {
+    order: 2;
+    flex-basis: 100%;
+  }
+}
