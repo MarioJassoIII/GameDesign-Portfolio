@@ -59,3 +59,82 @@ h2 span {
 .bi-discord:hover {
   color: #666;
 }
+
+/* Navbar container */
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.nav-wrapper .navbar {
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 50px;
+  background-color: rgba(4, 9, 21, 0.7);
+}
+
+/* Navigation links */
+.nav-pills {
+  gap: 10px;
+}
+
+.nav-pills .nav-link {
+  border-radius: 50px !important;
+  padding: 10px 20px;
+}
+
+/* Mobile hamburger menu */
+@media (max-width: 991.98px) {
+  .nav-wrapper .navbar {
+    border-radius: 30px !important;
+  }
+
+  .nav-wrapper .navbar .container {
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  .navbar-collapse {
+    flex-basis: 100%;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .navbar-collapse .nav-pills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .navbar-collapse .nav-item {
+    width: auto;
+  }
+
+  .navbar-collapse .nav-link {
+    display: block;
+    text-align: right;
+  }
+}
+
+/* Responsive YouTube video */
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
