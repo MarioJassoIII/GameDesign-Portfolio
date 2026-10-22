@@ -126,8 +126,10 @@ h2 span {
 .video-container {
   position: relative;
   width: 100%;
+  max-width: 650px;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .video-container iframe {
